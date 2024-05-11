@@ -1,12 +1,16 @@
-<form class="mt-3" [formGroup]="loginForm">
+<form class="mt-3" [formGroup]="loginForm" (ngSubmit)="onLogin">
 <p>
     <mat-form-field class="w-75" appearance="outline">
         <mat-label>Username</mat-label>
-<input matInput type="text" formControlName="username">
+            <input matInput type="text" formControlName="username">
     </mat-form-field>
 </p>
-
-
-
+<p>
+    <mat-form-field class="w-75" appearance="outline">
+        <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password">
+    </mat-form-field>
+</p>
+<button  mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
 
 </form>

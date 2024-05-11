@@ -9,9 +9,12 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class LoginFormComponent implements OnInit{
   loginForm: FormGroup =new FormGroup({
     username: new FormControl('',[Validators.required]),
+    password: new FormControl('',[Validators.required]),
   });
-  ngOnInit(): void {
-  
-  }
+  ngOnInit(): void {}
 
+onLogin(){
+console.log(this.loginForm.value);
+}
+  
 }
