@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { BookPageComponent } from './book-page/book-page.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  {path:'home', component:HomeComponent},
   {path:'search/:searchTerm', component:HomeComponent},
   {path:'tag/:tag', component:HomeComponent},
   {path:'book-page', component:BookPageComponent},
