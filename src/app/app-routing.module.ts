@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   {path:'search/:searchTerm', component:HomeComponent},
   {path:'tag/:tag', component:HomeComponent},
-  {path:'book/:id', component:BookPageComponent},
+  {path:'book-page', component:BookPageComponent},
   { path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) }
 ];
 

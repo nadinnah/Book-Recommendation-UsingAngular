@@ -1,29 +1,31 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<ul>
+    <li *ngFor="let book of books">
+        <a routerLink="/book/{{book.id}}">
+            <img src="{{book.imageUrl}}" alt="">
+            <div class="content">
+                <div class="name">
+                   {{book.name}}
+                </div>
+                <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
+                    ❤ <!-- Heart icon, toggle based on book.favorite -->
+                </span>
+                <div class="product-item-footer">
+                    <div class="origins">
+                        <span *ngFor="let tags of book.tags">
+                             {{tags}}
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class="price">
+                    <span>
+                        {{book.price | currency}}
+                    </span>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>
 
-<div *ngIf="book" class="container">
-    <img [src]="book.imageUrl" [alt]="book.name" />
-
-    <div class="details">
-        <div class="header">
-            <span class="name">
-                {{book.name}}
-        </span>
-           
-        </div>
-        <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
-            ❤ <!-- Heart icon, toggle based on book.favorite -->
-        </span>
-        
-
-        <div class="tags">
-            <app-tags [bookPageTags]="book.tags" justifyContent="start"></app-tags>
-        </div>
-
-        <div class="price">
-            <span>{{book.price|currency}}</span>
-        </div>
-        <div class="description">
-            <p>{{book.description}}</p>
-        </div>
-    </div>
-
-</div>
