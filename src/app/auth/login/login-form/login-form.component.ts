@@ -13,7 +13,7 @@ export class LoginFormComponent implements OnInit{
   });
   ngOnInit(): void {}
 
-onLogin(){
+onLogin(loginForm: FormGroup){
 console.log(this.loginForm.value);
 }
   
