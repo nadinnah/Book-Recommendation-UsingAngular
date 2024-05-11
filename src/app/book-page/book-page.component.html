@@ -1,0 +1,29 @@
+
+<div *ngIf="book" class="container">
+    <img [src]="book.imageUrl" [alt]="book.name" />
+
+    <div class="details">
+        <div class="header">
+            <span class="name">
+                {{book.name}}
+        </span>
+           
+        </div>
+        <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
+            ❤ <!-- Heart icon, toggle based on book.favorite -->
+        </span>
+        
+
+        <div class="tags">
+            <app-tags [bookPageTags]="book.tags" justifyContent="start"></app-tags>
+        </div>
+
+        <div class="price">
+            <span>{{book.price|currency}}</span>
+        </div>
+        <div class="description">
+            <p>{{book.description}}</p>
+        </div>
+    </div>
+
+</div>
