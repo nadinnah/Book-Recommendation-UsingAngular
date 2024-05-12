@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TagsComponent } from './tags/tags.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { BooksPageComponent } from './books-page/books-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     SearchComponent,
     FooterComponent,
     TagsComponent,
-    BookPageComponent
+    BookPageComponent,
+    BooksPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
-<div *ngIf="tags" [style.justifyContent] = "justifyContent">
-    <a *ngFor="let tag of tags" routerLink="/tag/{{tag.name}}">
-      {{tag.name}}({{tag.count}})
-    </a>
-  </div>
+<div *ngIf="tags" [style.justifyContent]="justifyContent">
+  <a *ngFor="let tag of tags" [routerLink]="['/books-page/tag', tag.name]">
+    {{ tag.name }} ({{ tag.count }})
+  </a>
+</div>
+
   <div *ngIf="bookPageTags" [style.justifyContent] = "justifyContent">
     <a *ngFor="let tagName of bookPageTags" routerLink="/tag/{{tagName}}">
       {{tagName}}

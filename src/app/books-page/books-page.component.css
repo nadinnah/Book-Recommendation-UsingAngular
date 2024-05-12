@@ -1,0 +1,75 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a{
+    height: 24rem;
+    width: 11rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #d52727;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.content{
+    padding: 0.5rem 2rem 0rem 0.3rem;
+    position: relative;
+}
+
+.favorite{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+
+.favorite.not{
+    color: grey;
+}
+
+ul li a img {
+    height: 15rem; /* Adjust to your desired image height */
+    width: 100%; /* Ensure images take up full width of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+}
+
+
+.product-item-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.origins{
+    flex: 9;
+}
+
+.origins span{
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: .7rem;
+    color: grey;
+    margin-right: .3rem;
+}
+
+
+
+.price{
+    color: #414141;
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    margin-top: 0.5rem;
+    line-height: 1.2; /* Adjust the line height for spacing */
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BookService } from '../services/book/book.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Book } from '../shared/models/Book';
@@ -8,30 +8,28 @@ import { Book } from '../shared/models/Book';
   templateUrl: './book-page.component.html',
   styleUrls: ['./book-page.component.css']
 })
-export class BookPageComponent  {
+export class BookPageComponent implements OnInit {
 
-  books:Book[] = [];
+  book!: Book;
 
-  constructor(private bookService:BookService, private route:ActivatedRoute){}
-  
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private bookService: BookService,
+    private router: Router
+  ) { }
+
   toggleFavorite(book: Book): void {
     this.bookService.toggleFavorite(book);
   }
 
+
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      const searchTerm = params['searchTerm'];
-      const tag = params['tag']; // Access 'tag' using bracket notation
-      if (searchTerm) {
-        this.books = this.bookService.getAll().filter(book =>
-          book.name.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-      } else if (tag) {
-        this.books = this.bookService.getAllBooksByTag(tag);
-      } else {
-        this.books = this.bookService.getAll();
+    this.activatedRoute.params.subscribe((params: Params) => {
+      const bookId = params['id']; // Access 'id' using bracket notation
+
+      if (bookId) {
+        this.book = this.bookService.getBookById(Number(bookId));
       }
     });
   }
-
 }

@@ -1,75 +1,79 @@
-ul{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    list-style-type: none;
-    padding: 0;
+    margin: 3rem;
 }
 
-ul li a{
-    height: 24rem;
-    width: 11rem;
-    border: 1px solid whitesmoke;
-    border-radius: 1rem;
-    margin: 0.5rem;
+.container > *{
+ min-width: 25rem;
+ max-width: 40rem;
+}
+
+img{
+    border-radius: 3rem;
+    flex:1 0;
+    object-fit: cover;
+    height: 60rem;
+    margin: 1rem;
+}
+
+.details{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    color: #d52727;
-}
-li a:hover{
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.content{
-    padding: 0.5rem 2rem 0rem 0.3rem;
-    position: relative;
+    flex:1 0;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 1rem;
 }
 
-.favorite{
-    position: absolute;
-    top: .5rem;
-    right: 1rem;
-    font-size: 1.2rem;
-}
-
-.favorite.not{
-    color: grey;
-}
-
-ul li a img {
-    height: 15rem; /* Adjust to your desired image height */
-    width: 100%; /* Ensure images take up full width of the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
-}
-
-
-.product-item-footer{
+.details .header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.origins{
-    flex: 9;
+.details .name{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.origins span{
-    border-radius: 2rem;
-    background-color: whitesmoke;
-    display: inline-block;
-    font-size: .7rem;
-    color: grey;
-    margin-right: .3rem;
+.details .favorite{
+    color: #e72929;
+    font-size: 2.5rem;
+}
+
+.details .favorite.not{
+    color: gray;
 }
 
 
 
-.price{
-    color: #414141;
-    font-size: 0.9rem; /* Adjust the font size as needed */
-    margin-top: 0.5rem;
-    line-height: 1.2; /* Adjust the line height for spacing */
+
+.details .price{
+    font-size: 1.8rem;
+    margin: 2rem 2rem 2rem 0;
+    color: green;
+}
+
+.details .price::before{
+    content: "Price: ";
+    color: darkgrey;
+}
+
+.details button{
+    color: white;
+    background: #e72929;
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    outline: none;
+}
+
+.details button:hover{
+    opacity: .9;
+    cursor: pointer;
 }
