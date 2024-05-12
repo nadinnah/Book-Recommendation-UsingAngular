@@ -1,0 +1,17 @@
+<div class="slides">
+    <div class="slide" [style.background-image]="'url(' + slides[currentSlide].url + ')'"
+    [style.background-size]="'cover'"
+    [style.background-position]="'center'"
+    [style.background-repeat]="'no-repeat'">
+    <div id="indicators">
+        @for (slide of slides; track $index;) {
+            <div class="indicator" 
+            (click)="jumpToSlide ($index)" 
+            [ngClass]="{ active: $index== currentSlide}"></div>
+        }
+        
+        <button (click)="prev()" class="prevButton"><fa-icon [icon]="faArrowLeft"></fa-icon></button>
+        <button (click)="next()" class="nextButton"><fa-icon [icon]="faArrowRight"></fa-icon></button>
+    </div>
+</div>
+</div>

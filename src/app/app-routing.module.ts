@@ -6,11 +6,11 @@ import { BooksPageComponent } from './books-page/books-page.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {path:'home-page', component:HomeComponent},
-  {path:'search/:searchTerm', component:HomeComponent},
+  {path:'search/:searchTerm', component:BooksPageComponent},
   {path:'books-page/tag/:tag', component:BooksPageComponent},
   {path:'book/:id', component:BookPageComponent},
   {path:'books-page',component:BooksPageComponent},
-  { path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) }
+  {path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) }
 ];
 
 @NgModule({

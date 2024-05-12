@@ -6,5 +6,7 @@ export class Book{
     favorite:boolean = false;
     imageUrl!:string;
     description!:string;
-   
+    Author!:string;
+    publisher!:string;
+    dateOfPublish!:number;
 }

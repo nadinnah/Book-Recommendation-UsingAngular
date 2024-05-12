@@ -52,7 +52,10 @@ export class BookService {
         
         Lee and DuBose could not be more dissimilar. On their own, neither one can stop the prosecution’s deliberate march towards a guilty verdict and the electric chair. But together, the pair fight for what once seemed impossible: a chance for a fair trial and true justice.
         
-        Over a decade in the writing, A Calamity of Souls breathes richly imagined and detailed life into a bygone era, taking the reader through a world that will seem both foreign and familiar.`
+        Over a decade in the writing, A Calamity of Souls breathes richly imagined and detailed life into a bygone era, taking the reader through a world that will seem both foreign and familiar.`,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,
       },
       {
         id: 2,
@@ -69,7 +72,10 @@ export class BookService {
         As her marriage to Tamlin approaches, Feyre's hollowness and nightmares consume her. She finds herself split into two different one who upholds her bargain with Rhysand, High Lord of the feared Night Court, and one who lives out her life in the Spring Court with Tamlin. While Feyre navigates a dark web of politics, passion, and dazzling power, a greater evil looms. She might just be the key to stopping it, but only if she can harness her harrowing gifts, heal her fractured soul, and decide how she wishes to shape her future-and the future of a world in turmoil.
         
         Bestselling author Sarah J. Maas's masterful storytelling brings this second book in her dazzling, sexy, action-packed series to new heights.`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 3,
         name: 'A Court Of Thorns And Roses',
@@ -85,7 +91,10 @@ export class BookService {
         As she adapts to her new home, her feelings for the faerie, Tamlin, transform from icy hostility into a fiery passion that burns through every lie she’s been told about the beautiful, dangerous world of the Fae. But something is not right in the faerie lands. An ancient, wicked shadow is growing, and Feyre must find a way to stop it, or doom Tamlin—and his world—forever.
         
         From bestselling author Sarah J. Maas comes a seductive, breathtaking book that blends romance, adventure, and faerie lore into an unforgettable read.`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 4,
         name: 'A Court Of Wings And Ruin',
@@ -101,7 +110,10 @@ export class BookService {
         As war bears down upon them all, Feyre endeavors to take her place amongst the High Fae of the land, balancing her struggle to master her powers-both magical and political-and her love for her court and family. Amidst these struggles, Feyre and Rhysand must decide whom to trust amongst the cunning and lethal High Lords, and hunt for allies in unexpected places.
 
         In this thrilling third book in the #1 New York Times bestselling series from Sarah J. Maas, the fate of Feyre's world is at stake as armies grapple for power over the one thing that could destroy it.`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 5,
         name: 'Funny Story',
@@ -118,7 +130,10 @@ export class BookService {
         Scruffy and chaotic—with a penchant for taking solace in the sounds of heart break love ballads—Miles is exactly the opposite of practical, buttoned up Daphne, whose coworkers know so little about her they have a running bet that she’s either FBI or in witness protection. The roommates mainly avoid one another, until one day, while drowning their sorrows, they form a tenuous friendship and a plan. If said plan also involves posting deliberately misleading photos of their summer adventures together, well, who could blame them?
         
         But it’s all just for show, of course, because there’s no way Daphne would actually start her new chapter by falling in love with her ex-fiancé’s new fiancée’s ex…right?`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 6,
         name: 'Home Is Where The Bodies Are',
@@ -133,7 +148,10 @@ export class BookService {
         While going through their parent’s belongings, the siblings stumble upon a collection of home videos and decide to revisit those happier memories. However, the nostalgia is cut short when one of the VHS tapes reveals a night back in 1999 that none of them have any recollection of. On screen, their father appears covered in blood. What follows is a dead body and a pact between their parents to get rid of it, before the video abruptly ends.
         
         Beth, Nicole, and Michael must now decide whether to leave the past in the past or uncover the dark secret their mother took to her grave.`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 7,
         name: 'Just For The Summer',
@@ -146,7 +164,10 @@ export class BookService {
         Emma hadn't planned that her next assignment as a traveling nurse would be in Minnesota, but she and her best friend agree that dating Justin is too good of an opportunity to pass up, especially when they get to rent an adorable cottage on a private island on Lake Minnetonka.
         
         It's supposed to be a quick fling, just for the summer. But when Emma's toxic mother shows up and Justin has to assume guardianship of his three siblings, they're suddenly navigating a lot more than they expected–including catching real feelings for each other. What if this time Fate has actually brought the perfect pair together?`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 8,
         name: 'King Of Sloth',
@@ -170,7 +191,10 @@ export class BookService {
         She may be forced to work with him, but she’ll never fall for him…no matter how fast he makes her heart beat or how thoughtful he is beneath his party persona. 
         
         He’s her client, and that’s all he’ll ever be. Right?`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 9,
         name: 'Murder Your Employer',
@@ -179,7 +203,10 @@ export class BookService {
         imageUrl: '/assets/images/MurderYourEmployer.jpg',
         tags: ['Thriller', 'Humor', 'Mystery'],
         description: "Who hasn't wondered for a split second what the world would be like the object of your affliction ceased to exist? But then you've probably never heard of The McMasters Conservatory, dedicated to the consummate execution of the homicidal arts. To gain admission, a student must have an ethical reason for erasing someone who deeply deserves a fate no worse (nor better) than death."
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 10,
         name: 'Only The Brave',
@@ -188,7 +215,10 @@ export class BookService {
         imageUrl: '/assets/images/OnlyTheBrave.jpg',
         tags: ['Historical Fiction', 'Historical Romance'],
         description: "A powerful new novel from Danielle Steel, whose countless #1 New York Times bestselling novels have made her one of America’s favorite storytellers."
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
       {
         id: 11,
         name: 'The Women',
@@ -205,7 +235,10 @@ export class BookService {
         But war is just the beginning for Frankie and her veteran friends. The real battle lies in coming home to a changed and divided America, to angry protesters, and to a country that wants to forget Vietnam.
         
         The Women is the story of one woman gone to war, but it shines a light on all women who put themselves in harm’s way and whose sacrifice and commitment to their country has too often been forgotten. A novel about deep friendships and bold patriotism, The Women is a richly drawn story with a memorable heroine whose idealism and courage under fire will come to define an era.`
-      },
+        ,
+        Author:"",
+        publisher:"",
+        dateOfPublish: 10,},
     ];
   }
 }

@@ -11,6 +11,8 @@ import { TagsComponent } from './tags/tags.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BooksPageComponent } from './books-page/books-page.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,15 @@ import { BooksPageComponent } from './books-page/books-page.component';
     FooterComponent,
     TagsComponent,
     BookPageComponent,
-    BooksPageComponent
+    BooksPageComponent,
+    ImageSliderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule,
+    FontAwesomeModule,
   ],
   providers: [
     provideAnimationsAsync('noop')
