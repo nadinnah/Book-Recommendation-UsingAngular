@@ -11,6 +11,16 @@
             <input id="password"  matInput type="password" formControlName="password">
     </mat-form-field>
 </p>
+<p>
+    <mat-form-field class="w-75" appearance="outline">
+        <mat-label>Select user type</mat-label>
+        <mat-select formControlName="userTypeProperty" >
+            @for (userLoop of users; track userLoop) {
+              <mat-option [value]="userLoop.user">{{userLoop.user}}</mat-option>
+            }
+          </mat-select>
+    </mat-form-field>
+</p>
 <button  mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
 
 </form>

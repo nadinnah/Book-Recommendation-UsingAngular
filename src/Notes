@@ -1,0 +1,10 @@
+/* paste in login-form component.ts */
+
+/* to make a new user */
+/*
+this.httpClient.post(
+  'https://project-database-1b68a-default-rtdb.firebaseio.com/usersDatabase.json',
+  this.loginForm.value
+)
+.subscribe((Response) => console.log(Response));
+ */

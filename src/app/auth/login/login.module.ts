@@ -8,6 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -20,7 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule,HttpClientModule
   ]
 })
 export class LoginModule { }
