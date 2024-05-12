@@ -1,0 +1,40 @@
+header{
+    background: rgba(208, 205, 205, 0.69);
+    padding: 0;
+    border-bottom: 1px solid #927676;
+}
+
+a{
+    color:rgb(84, 34, 34)
+}
+
+a:hover:not(.logo) {
+    background: hsla(0, 30%, 34%, 0.741);
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+a.logo{
+    font-weight: bold;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /* Remove default padding */
+    display: flex;
+}
+nav ul li a {
+    padding: 1em;
+    display: block;
+}
+app-search {
+    margin-left: auto; /* Push app-search to the right */
+}

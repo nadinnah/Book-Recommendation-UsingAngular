@@ -13,6 +13,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { BooksPageComponent } from './books-page/books-page.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
+import { HeaderReaderComponent } from './header-reader/header-reader.component';
+import { HomePageAdminComponent } from './home-page-admin/home-page-admin.component';
+import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TagsComponent,
     BookPageComponent,
     BooksPageComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    HeaderAdminComponent,
+    HeaderReaderComponent,
+    HomePageAdminComponent,
+    HomePageReaderComponent
   ],
   imports: [
     BrowserModule,
