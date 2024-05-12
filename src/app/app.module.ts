@@ -17,6 +17,13 @@ import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { HeaderReaderComponent } from './header-reader/header-reader.component';
 import { HomePageAdminComponent } from './home-page-admin/home-page-admin.component';
 import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
+import { DbAdderComponent } from './db-adder/db-adder.component';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +39,8 @@ import { HomePageReaderComponent } from './home-page-reader/home-page-reader.com
     HeaderAdminComponent,
     HeaderReaderComponent,
     HomePageAdminComponent,
-    HomePageReaderComponent
+    HomePageReaderComponent,
+    DbAdderComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +48,8 @@ import { HomePageReaderComponent } from './home-page-reader/home-page-reader.com
     FormsModule,
     FontAwesomeModule,
     FontAwesomeModule,
+    MatFormFieldModule,MatCardModule,MatInputModule,MatButtonModule,MatSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [
     provideAnimationsAsync('noop')

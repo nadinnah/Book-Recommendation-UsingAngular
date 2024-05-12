@@ -1,0 +1,28 @@
+<div>
+    <form class="mt-3" [formGroup]="bookForm" (ngSubmit)="onAddBook(bookForm)">
+    <p>
+        <mat-form-field class="w-75" appearance="outline">
+            <mat-label>Book Name</mat-label>
+                <input id="bookName"  matInput type="text" formControlName="bookName">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="w-75" appearance="outline">
+            <mat-label>Book ID</mat-label>
+                <input id="bookId"  matInput type="text" formControlName="bookId">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="w-75" appearance="outline">
+            <mat-label>Genre of book</mat-label>
+            <mat-select formControlName="tag" >
+                @for (tagloop of bookTags; track tagloop) {
+                  <mat-option [value]="tagloop.tagofbook">{{tagloop.tagofbook}}</mat-option>
+                }
+              </mat-select>
+        </mat-form-field>
+    </p>
+    <button  mat-raised-button color="primary" type="submit" [disabled]="!bookForm.valid">Login</button>
+    </form>
+    
+    </div>
