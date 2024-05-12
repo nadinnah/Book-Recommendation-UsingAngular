@@ -54,7 +54,7 @@ if(matchedUser){
       if (matchedUser.password === loginForm.value.password && matchedUser.userTypeProperty === loginForm.value.userTypeProperty){
         console.log(user);
         this.errorMessage = null;
-        this.router.navigate(['../../','home'],{
+        this.router.navigate(['../../','home-page'],{
           relativeTo: this.activateRoute
         });
       }else{
