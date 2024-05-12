@@ -1,0 +1,11 @@
+.error-message {
+    color: #fff;
+  background-color: #ff3333; /* Red background color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin-top: 10px;
+  width: 300px; /* Adjust the width as needed */
+  text-align: center;
+  }
+  

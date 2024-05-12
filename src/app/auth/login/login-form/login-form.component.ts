@@ -1,6 +1,7 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 interface userTypeInterface {
@@ -22,13 +23,19 @@ export class LoginFormComponent implements OnInit{
     {user: 'Admin'},
     {user: 'Reader'},
   ];
+  errorMessage: string | null = null;
 
   
-  constructor(private httpClient: HttpClient){}
+  constructor(
+    private httpClient: HttpClient,
+    private router: Router,
+    private activateRoute:ActivatedRoute
+  ){}
 
   ngOnInit(): void {}
 
 onLogin(loginForm: FormGroup){
+  
   const URL = "https://project-database-1b68a-default-rtdb.firebaseio.com/usersDatabase.json";
 
   /* to print the log in credintials in console
@@ -41,11 +48,23 @@ onLogin(loginForm: FormGroup){
     .set("orderBy",'"username"')
     .set('equalTo',`"${loginForm.value.username}"`)})
     .subscribe(user =>{
-      if (Object.keys(user)?.length>0){
+      const userArray = Object.values(user);
+      const matchedUser = userArray.find((user: any) => user.username === loginForm.value.username);
+if(matchedUser){
+      if (matchedUser.password === loginForm.value.password && matchedUser.userTypeProperty === loginForm.value.userTypeProperty){
         console.log(user);
+        this.errorMessage = null;
+        this.router.navigate(['../../','home'],{
+          relativeTo: this.activateRoute
+        });
       }else{
-        console.error("No users found with this username");
+        this.errorMessage = "Incorrect username/password";
+        console.error("Incorrect username/password");
       }
+    }else{
+      this.errorMessage = "No users found with this username";
+      console.error("No users found with this username");
+    }
 
   });
 
