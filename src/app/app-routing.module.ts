@@ -6,7 +6,6 @@ import { BooksPageComponent } from './books-page/books-page.component';
 import { DbAdderComponent } from './db-adder/db-adder.component';
 import { HomePageAdminComponent } from './home-page-admin/home-page-admin.component';
 import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
-import { LoginFormComponent } from './auth/login/login-form/login-form.component';
 import { LoginComponent } from './auth/login/login.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },

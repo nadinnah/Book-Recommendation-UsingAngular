@@ -62,14 +62,14 @@ if(matchedUser){
                   this.errorMessage = null;
                   this.isAdmin=true;
                  
-              this.router.navigate(['../../','home-page-admin'],{
+              this.router.navigate(['/','home-page-admin'],{
                 relativeTo: this.activateRoute
               });
           }else{
                 this.errorMessage = null;
                 this.isAdmin=false;
                
-                this.router.navigate(['../../','home-page'],{
+                this.router.navigate(['/','home-page-reader'],{
                   relativeTo: this.activateRoute
                 });
           }
