@@ -1,11 +1,15 @@
-<div> 
-<mat-card style="width: 500px; margin: 0 auto; ">
+<div class="container"> 
+<mat-card>
     <mat-card-header>
         <mat-card-title>Add Books</mat-card-title>
+        <br>
+        <br>
+        <br>
     </mat-card-header>
-        <mat-card-content>
+        <mat-card-content class="form-container">
             <form class="form" [formGroup]="bookForm" (ngSubmit)="onAddBook(bookForm)">
-                
+                <table>
+                    <th class="column">
                     <p>
                         <mat-form-field class="w-75" appearance="outline">
                             <mat-label>Book Name</mat-label>
@@ -26,7 +30,7 @@
                                 <input id="bookId"  matInput type="number" formControlName="bookId">
                         </mat-form-field>
                     </p>
-
+                          
                     <p>
                         <mat-form-field class="w-75" appearance="outline">
                             <mat-label>Genre of book</mat-label>
@@ -37,7 +41,8 @@
                             </mat-select>
                         </mat-form-field>
                     </p>
-
+                </th>
+                <th class="column">
                     <p>
                         <mat-form-field class="w-75" appearance="outline">
                             <mat-label>Image URL</mat-label>
@@ -68,7 +73,8 @@
                                 <mat-datepicker touchUi #picker></mat-datepicker> 
                         </mat-form-field>
                     </p>
-                    
+                </th>
+                </table>
                     <button  mat-raised-button color="primary" type="submit" [disabled]="!bookForm.valid" (click)="Message()">Add book</button>
                     <div class="book-added-message" *ngIf="bookAddedMessage">{{ bookAddedMessage }}</div>
 

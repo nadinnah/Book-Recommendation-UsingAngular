@@ -4,16 +4,16 @@ import { HomeComponent } from './home/home.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import { BooksPageComponent } from './books-page/books-page.component';
 import { DbAdderComponent } from './db-adder/db-adder.component';
-import { HeaderAdminComponent } from './header-admin/header-admin.component';
-import { HeaderReaderComponent } from './header-reader/header-reader.component';
 import { HomePageAdminComponent } from './home-page-admin/home-page-admin.component';
 import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
+import { LoginFormComponent } from './auth/login/login-form/login-form.component';
+import { LoginComponent } from './auth/login/login.component';
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
   {path:'home-page', component:HomeComponent},
   {path:'search/:searchTerm', component:BooksPageComponent},
   {path:'books-page/tag/:tag', component:BooksPageComponent},
-  {path:'book/:id', component:BookPageComponent},
+  {path:'books-page/:id', component:BookPageComponent},
   {path:'books-page',component:BooksPageComponent},
   {path:'db-adder',component:DbAdderComponent},
   {path:'home-page-reader',component:HomePageReaderComponent},
