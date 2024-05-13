@@ -4,9 +4,9 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Book } from '../shared/models/Book';
 
 @Component({
-  selector: 'app-book-page',
+  selector: 'app-book-page-number',
   templateUrl: './book-page.component.html',
-  styleUrls: ['./book-page.component.css']
+  styleUrl: './book-page.component.css'
 })
 export class BookPageComponent implements OnInit {
 

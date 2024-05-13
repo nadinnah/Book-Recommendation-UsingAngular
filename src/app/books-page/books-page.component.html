@@ -1,16 +1,15 @@
-
+<app-header-reader></app-header-reader>
 <app-search></app-search>
 <app-tags ></app-tags> 
 <ul>
     <li *ngFor="let book of books">
-        <a routerLink="/book/{{book.id}}">
+        <a routerLink="/book-page-number/{{book.id}}">
             <img src="{{book.imageUrl}}" alt="">
             <div class="content">
                 <div class="name">
                    {{book.name}}
                 </div>
                 <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
-                    ❤ <!-- Heart icon, toggle based on book.favorite -->
                 </span>
                 <div class="product-item-footer">
                     <div class="origins">

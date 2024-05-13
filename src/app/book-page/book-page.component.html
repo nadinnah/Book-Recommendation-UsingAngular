@@ -1,4 +1,4 @@
-
+<app-header-reader></app-header-reader>
 <div *ngIf="book" class="container">
     <img [src]="book.imageUrl" [alt]="book.name" />
 
@@ -11,7 +11,6 @@
         </div>
         <br>
         <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
-            ❤ <!-- Heart icon, toggle based on book.favorite -->
         </span>
         
         <br>

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './header-reader.component.css'
 })
 export class HeaderReaderComponent {
-
+  
 }
