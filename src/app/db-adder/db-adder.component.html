@@ -56,11 +56,20 @@
                     <p>
                         <mat-form-field class="w-75" appearance="outline">
                             <mat-label>Genre of book</mat-label>
-                            <mat-select formControlName="tag" >
+                            <mat-select formControlName="tag" multiple>
                                 @for (tagloop of bookTags; track tagloop) {
                                 <mat-option [value]="tagloop.tagofbook">{{tagloop.tagofbook}}</mat-option>
                                 }
                             </mat-select>
+                        </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field floatLabel="always" appearance="outline">
+                            <mat-label>Price</mat-label>
+                                <input id="price"  matInput type="number" placeholder="0" formControlName="price">
+                                <span matTextPrefix>$&nbsp;</span>
+                                <span matTextSuffix>.00</span>
                         </mat-form-field>
                     </p>
                 </th>

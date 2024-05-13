@@ -21,7 +21,8 @@ Message() {
 
   bookForm: FormGroup =new FormGroup({
     bookName: new FormControl('',[Validators.required]),
-    bookId: new FormControl('',[Validators.required,Validators.minLength(8)]),
+    bookId: new FormControl('',[Validators.required]),
+    price: new FormControl('',[Validators.required]),
     tag: new FormControl('',[Validators.required]),
     imageUrl: new FormControl(''),
     description: new FormControl('',[Validators.required]),

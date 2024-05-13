@@ -43,7 +43,7 @@ export class BookService {
         price: 10,
         favorite: false,
         imageUrl: '/assets/images/ACalamityOfSouls.jpg',
-        tags: ['Thriller', 'Action', 'Crime'],
+        tags: ['Thriller'],
         description: `Set in the tumultuous year of 1968 in southern Virginia, a racially-charged murder case sets a duo of white and Black lawyers against a deeply unfair system as they work to defend their wrongfully-accused Black defendants in this courtroom drama from #1 New York Times bestselling author David Baldacci.
 
         Jack Lee is a white lawyer from Freeman County, Virginia, who has never done anything to push back against racism, until he decides to represent Jerome Washington, a Black man charged with brutally killing an elderly and wealthy white couple. Doubting his decision, Lee fears that his legal skills may not be enough to prevail in a case where the odds are already stacked against both him and his client. And he quickly finds himself out of his depth when he realizes that what is at stake is far greater than the outcome of a murder trial.
@@ -63,7 +63,7 @@ export class BookService {
         price: 20,
         favorite: true,
         imageUrl: '/assets/images/ACourtOfMistAndFury.jpg',
-        tags: ['Fantasy', 'Romance', 'Young Adult'],
+        tags: ['Fantasy', 'Romance'],
         description: `Goodreads Choice AwardWinner for Best Young Adult Fantasy & Science Fiction (2016)
         The seductive and stunning #1 New York Times bestselling sequel to Sarah J. Maas's spellbinding A Court of Thorns and Roses .
         
@@ -101,7 +101,7 @@ export class BookService {
         price: 2,
         favorite: true,
         imageUrl: '/assets/images/ACourtOfWingsAndRuin.jpg',
-        tags: ['Fantasy', 'Romance', 'Young Adult'],
+        tags: ['Fantasy', 'Romance'],
         description: `Winner for Best Young Adult Fantasy & Science Fiction (2017)
         The epic third novel in the #1 New York Times bestselling Court of Thorns and Roses series by Sarah J. Maas.
         
@@ -120,7 +120,7 @@ export class BookService {
         price: 11,
         favorite: false,
         imageUrl: '/assets/images/FunnyStory.jpg',
-        tags: ['Fiction', 'Romance', 'Contemporary'],
+        tags: ['Sci-Fi', 'Romance'],
         description: `A shimmering, joyful new novel about a pair of opposites with the wrong thing in common.
 
         Daphne always loved the way her fiancé Peter told their story. How they met (on a blustery day), fell in love (over an errant hat), and moved back to his lakeside hometown to begin their life together. He really was good at telling it…right up until the moment he realized he was actually in love with his childhood best friend Petra.
@@ -140,7 +140,7 @@ export class BookService {
         price: 9,
         favorite: false,
         imageUrl: '/assets/images/HomeIsWhereTheBodiesAre.jpg',
-        tags: ['Thriller', 'Horror', 'Mystery'],
+        tags: ['Thriller','Mystery'],
         description: `From New York Times bestselling author of The Perfect Marriage and You Shouldn’t Have Come Here comes a chilling family thriller about the (sometimes literal) skeletons in the closet.
 
         After their mother passes, three estranged siblings reunite to sort out her estate. Beth, the oldest, never left home. She stayed with her mom, caring for her until the very end. Nicole, the middle child, has been kept at arm’s length due to her ongoing battle with a serious drug addiction. Michael, the youngest, lives out of state and hasn’t been back to their small Wisconsin town since their father ran out on them seven years before.
@@ -158,7 +158,7 @@ export class BookService {
         price: 9,
         favorite: false,
         imageUrl: '/assets/images/JustForTheSummer.jpg',
-        tags: ['Fiction', 'Romance', 'Contemporary'],
+        tags: ['Sci-Fi', 'Romance'],
         description: `Justin has a curse, and thanks to a Reddit thread, it's now all over the internet. Every woman he dates goes on to find their soul mate the second they break up. When a woman slides into his DMs with the same problem, they come up with a plan: They'll date each other and break up. Their curses will cancel each other’s out, and they’ll both go on to find the love of their lives. It’s a bonkers idea… and it just might work.
 
         Emma hadn't planned that her next assignment as a traveling nurse would be in Minnesota, but she and her best friend agree that dating Justin is too good of an opportunity to pass up, especially when they get to rent an adorable cottage on a private island on Lake Minnetonka.
@@ -174,7 +174,7 @@ export class BookService {
         price: 9,
         favorite: false,
         imageUrl: '/assets/images/KingOfSloth.jpg',
-        tags: ['Fiction', 'Romance', 'Fantasy'],
+        tags: ['Sci-Fi', 'Romance', 'Fantasy'],
         description: `He'd never wanted anyone enough to chase them...until he met her.
 
         Charming, easygoing, and rich beyond belief, Xavier Castillo has the world at his fingertips. 
@@ -201,7 +201,7 @@ export class BookService {
         price: 9,
         favorite: false,
         imageUrl: '/assets/images/MurderYourEmployer.jpg',
-        tags: ['Thriller', 'Humor', 'Mystery'],
+        tags: ['Thriller', 'Mystery'],
         description: "Who hasn't wondered for a split second what the world would be like the object of your affliction ceased to exist? But then you've probably never heard of The McMasters Conservatory, dedicated to the consummate execution of the homicidal arts. To gain admission, a student must have an ethical reason for erasing someone who deeply deserves a fate no worse (nor better) than death."
         ,
         Author:"",
@@ -225,7 +225,7 @@ export class BookService {
         price: 9,
         favorite: false,
         imageUrl: '/assets/images/TheWomen.jpg',
-        tags: ['Historical Fiction', 'War', 'Adult'],
+        tags: ['Sci-Fi'],
         description: `An intimate portrait of coming of age in a dangerous time and an epic tale of a nation divided.
 
         Women can be heroes. When twenty-year-old nursing student Frances “Frankie” McGrath hears these words, it is a revelation. Raised in the sun-drenched, idyllic world of Southern California and sheltered by her conservative parents, she has always prided herself on doing the right thing. But in 1965, the world is changing, and she suddenly dares to imagine a different future for herself. When her brother ships out to serve in Vietnam, she joins the Army Nurse Corps and follows his path.
