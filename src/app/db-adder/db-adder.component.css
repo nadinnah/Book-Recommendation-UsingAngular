@@ -1,0 +1,13 @@
+.book-added-message {
+    color: #000000;
+  background-color: #36ff33; /* Green background color */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin-top: 10px;
+  width: 300px; /* Adjust the width as needed */
+  text-align: center;
+  }
+
+  
+  

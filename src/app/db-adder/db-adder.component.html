@@ -15,8 +15,15 @@
 
                     <p>
                         <mat-form-field class="w-75" appearance="outline">
+                            <mat-label>Book Author</mat-label>
+                                <input id="bookAuthor"  matInput type="text" formControlName="Author">
+                        </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field class="w-75" appearance="outline">
                             <mat-label>Book ID</mat-label>
-                                <input id="bookId"  matInput type="text" formControlName="bookId">
+                                <input id="bookId"  matInput type="number" formControlName="bookId">
                         </mat-form-field>
                     </p>
 
@@ -30,7 +37,40 @@
                             </mat-select>
                         </mat-form-field>
                     </p>
-                    <button  mat-raised-button color="primary" type="submit" [disabled]="!bookForm.valid">Login</button>
+
+                    <p>
+                        <mat-form-field class="w-75" appearance="outline">
+                            <mat-label>Image URL</mat-label>
+                                <input id="imageBook"  matInput type="text" formControlName="imageUrl">
+                        </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field class="w-75" appearance="outline">
+                            <mat-label>Book Description</mat-label>
+                                <textarea id="description"  matInput type="textarea" formControlName="description"> </textarea>
+                        </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field class="w-75" appearance="outline">
+                            <mat-label>Publisher</mat-label>
+                                <input id="publisher"  matInput type="text" formControlName="publisher">
+                        </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field class="w-75" appearance="outline">
+                            <mat-label>Date of publish</mat-label>
+                                <input id="dateOfPublish"  matInput [matDatepicker]="picker" formControlName="dateOfPublish">
+                                <mat-hint>MM/DD/YYYY</mat-hint>
+                                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker touchUi #picker></mat-datepicker> 
+                        </mat-form-field>
+                    </p>
+                    
+                    <button  mat-raised-button color="primary" type="submit" [disabled]="!bookForm.valid" (click)="Message()">Add book</button>
+                    <div class="book-added-message" *ngIf="bookAddedMessage">{{ bookAddedMessage }}</div>
 
             </form>
         </mat-card-content>

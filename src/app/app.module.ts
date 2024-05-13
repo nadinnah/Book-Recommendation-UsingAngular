@@ -25,6 +25,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HttpParams } from '@angular/common/http';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {provideNativeDateAdapter} from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { HttpClient, HttpClientModule, HttpParams } from '@angular/common/http';
     FontAwesomeModule,
     MatFormFieldModule,MatCardModule,MatInputModule,MatButtonModule,MatSelectModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDatepickerModule,
+    
   ],
   providers: [
     provideAnimationsAsync('noop')
