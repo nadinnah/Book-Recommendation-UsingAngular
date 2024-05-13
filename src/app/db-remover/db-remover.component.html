@@ -52,8 +52,8 @@
                                 <label>Book Price: </label> {{book.price | currency}}
                             </span>
                         </div>
-                        
-                        <button  mat-raised-button color="primary" type="submit" (click)="Message()">Delete book</button>
+
+                        <button  mat-raised-button color="primary" type="submit" (click)="onDeleteBook(book.bookId)">Delete book</button>
                     <div class="book-removed-message" *ngIf="bookRemovedMessage">{{ bookRemovedMessage }}</div>
 
             </div>

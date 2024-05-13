@@ -21,6 +21,12 @@ export class DbRemoverComponent implements OnInit{
     this.bookRemovedMessage="Book Removed Sucessfully"
   }
 
+  onDeleteBook(bookId:string){
+    
+
+    this.Message();
+  }
+
   bookRemovedMessage: string | null = null;
   
   constructor(
@@ -40,6 +46,7 @@ export class DbRemoverComponent implements OnInit{
   );
 
   }
+
 
  
 
