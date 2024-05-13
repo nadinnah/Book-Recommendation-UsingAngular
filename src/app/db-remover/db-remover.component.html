@@ -1,1 +1,67 @@
-<p>db-remover works!</p>
+<header>
+    <div class="head">
+        <a class="logo">BookLib</a>
+        <nav>
+            
+            <ul>
+                <li>
+                    <a href="#" routerLink="">Log out</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/">Add Banners</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="/db-adder">Add Books</a>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
+</header>
+
+<div class="bookDisplayer">
+        <ul>
+            <li *ngFor="let book of books">
+                
+            <div class="bookHandler">
+                    <div class="nameDisplayer">
+                        <label>Book Name: </label>
+                        {{ book.bookName }}
+                    </div>
+
+                    <div class="authorDisplayer">
+                        <label>Book Author: </label>
+                        {{ book.Author }}
+                    </div>
+
+                    <div class="bookIdDisplayer">
+                        <label>Book ID: </label>
+                        {{ book.bookId }}
+                    </div>
+
+                        <div class="tagDisplayer">
+                            <div class="origins">
+                                <span *ngFor="let tags of book.tag">
+                                    <label>Genre: </label> {{ book.tag }}
+                                </span>
+                            </div>  
+                        </div>
+
+                        <div class="priceDisplayer">
+                            <span>
+                                <label>Book Price: </label> {{book.price | currency}}
+                            </span>
+                        </div>
+                        
+                        <button  mat-raised-button color="primary" type="submit" (click)="Message()">Delete book</button>
+                    <div class="book-removed-message" *ngIf="bookRemovedMessage">{{ bookRemovedMessage }}</div>
+
+            </div>
+            </li>
+        </ul>
+</div>
+
+
+
+  
+  

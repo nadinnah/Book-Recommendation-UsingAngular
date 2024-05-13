@@ -7,6 +7,7 @@ import { DbAdderComponent } from './db-adder/db-adder.component';
 import { HomePageAdminComponent } from './home-page-admin/home-page-admin.component';
 import { HomePageReaderComponent } from './home-page-reader/home-page-reader.component';
 import { LoginComponent } from './auth/login/login.component';
+import { DbRemoverComponent } from './db-remover/db-remover.component';
 const routes: Routes = [
   { path: '', component: LoginComponent },
   {path:'home-page', component:HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'book-page-number/:tag', component:BookPageComponent},
   {path:'books-page',component:BooksPageComponent},
   {path:'db-adder',component:DbAdderComponent},
+  {path:'db-remover',component:DbRemoverComponent},
   {path:'home-page-reader',component:HomePageReaderComponent},
   {path:'home-page-admin',component:HomePageAdminComponent},
   {path: 'auth/login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) }

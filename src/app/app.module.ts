@@ -29,6 +29,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {provideNativeDateAdapter} from '@angular/material/core';
 import { DbRemoverComponent } from './db-remover/db-remover.component';
 import { BannersComponent } from './banners/banners.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { BannersComponent } from './banners/banners.component';
     ReactiveFormsModule,
     HttpClientModule,
     MatDatepickerModule,
+    MatTableModule,
     
   ],
   providers: [
