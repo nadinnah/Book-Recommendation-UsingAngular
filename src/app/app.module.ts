@@ -27,6 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule, HttpParams } from '@angular/common/http';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {provideNativeDateAdapter} from '@angular/material/core';
+import { DbRemoverComponent } from './db-remover/db-remover.component';
+import { BannersComponent } from './banners/banners.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import {provideNativeDateAdapter} from '@angular/material/core';
     HeaderReaderComponent,
     HomePageAdminComponent,
     HomePageReaderComponent,
-    DbAdderComponent
+    DbAdderComponent,
+    DbRemoverComponent,
+    BannersComponent
   ],
   imports: [
     BrowserModule,

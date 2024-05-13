@@ -1,5 +1,5 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -23,8 +23,10 @@ export class LoginFormComponent implements OnInit{
     {user: 'Admin'},
     {user: 'Reader'},
   ];
+
   errorMessage: string | null = null;
 
+  isAdmin: boolean = false;
   
   constructor(
     private httpClient: HttpClient,
@@ -52,11 +54,26 @@ onLogin(loginForm: FormGroup){
       const matchedUser = userArray.find((user: any) => user.username === loginForm.value.username);
 if(matchedUser){
       if (matchedUser.password === loginForm.value.password && matchedUser.userTypeProperty === loginForm.value.userTypeProperty){
+
+        /* print username w password in console
         console.log(user);
-        this.errorMessage = null;
-        this.router.navigate(['../../','home-page'],{
-          relativeTo: this.activateRoute
-        });
+        */
+          if (matchedUser.userTypeProperty ==="Admin") {
+                  this.errorMessage = null;
+                  this.isAdmin=true;
+                 
+              this.router.navigate(['../../','home-page-admin'],{
+                relativeTo: this.activateRoute
+              });
+          }else{
+                this.errorMessage = null;
+                this.isAdmin=false;
+               
+                this.router.navigate(['../../','home-page'],{
+                  relativeTo: this.activateRoute
+                });
+          }
+        
       }else{
         this.errorMessage = "Incorrect username/password";
         console.error("Incorrect username/password");
