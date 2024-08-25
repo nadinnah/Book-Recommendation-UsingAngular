@@ -9,6 +9,14 @@
   text-align: center;
   }
 
+  .deleter {
+    position: absolute;
+    right: 0;
+    top: auto; /* Optional: Adjust vertical alignment */
+    transform: translateY(-50%); /* Optional: Center vertically */
+  }
+  
+
   .container {
     position: absolute;
     top: 50%;

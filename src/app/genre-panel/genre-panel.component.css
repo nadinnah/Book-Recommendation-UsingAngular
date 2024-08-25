@@ -1,0 +1,68 @@
+.product {
+    padding: 20px 0;
+  }
+  
+  .slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+  }
+  
+  .slider-main {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .item {
+    flex: 0 0 200px;
+    height: 400px;
+    margin: 0 12px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text {
+    padding: 20px;
+  }
+  
+  .book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .button-area {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .prev,
+  .next {
+    background-color: rgba(208, 205, 205, 0.69);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  

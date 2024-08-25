@@ -1,0 +1,41 @@
+<h1 style="font-size: 45px; text-align: center; font-weight: bolder;">GENRES</h1>
+<h1 style="font-size: 30px; text-align: left; font-weight: bolder; margin-left: 20px;">Romance:</h1>
+<section class="product">
+  <div class="container-fluid">
+    <div class="slider-wrap">
+      <div class="slider-main">
+        <div *ngFor="let book of romanceBooks" class="item">
+          <img [src]="book.imageUrl" alt="{{ book.name }}" class="book-image">
+          <div class="text">{{ book.name }}</div>
+        </div>
+      </div>
+      <div class="button-area">
+        <button type="button" class="prev" appPrev>&#8249;</button>
+        <button type="button" class="next" appNext>&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<h1 style="font-size: 30px; text-align: left; font-weight: bolder; margin-left: 20px;">Fantasy:</h1>
+
+<section class="product">
+  <div class="container-fluid">
+    <div class="slider-wrap">
+      <div class="slider-main">
+        <div *ngFor="let book of fantasyBooks" class="item">
+          <img [src]="book.imageUrl" alt="{{ book.name }}" class="book-image">
+          <div class="text">
+            <div class="book-name">{{ book.name }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="button-area">
+        <button type="button" class="prev" appPrev>&#8249;</button>
+        <button type="button" class="next" appNext>&#8250;</button>
+      </div>
+    </div>
+  </div>
+</section>

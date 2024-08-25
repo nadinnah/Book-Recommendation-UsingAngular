@@ -1,0 +1,35 @@
+<!-- advanced-search.component.html -->
+<div class="container">
+  <h2>Advanced Book Search</h2>
+  <form (ngSubmit)="searchBooks()">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="searchCriteria.title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      <input type="text" class="form-control" id="author" [(ngModel)]="searchCriteria.author" name="author">
+    </div>
+    <div class="form-group">
+      <label for="tag">Tag:</label>
+      <select class="form-control" id="tag" [(ngModel)]="searchCriteria.tag" name="tag">
+        <option *ngFor="let tag of tags" [value]="tag.name">{{ tag.name }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="publisher">Publisher:</label>
+      <input type="text" class="form-control" id="publisher" [(ngModel)]="searchCriteria.publisher" name="publisher">
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <input type="number" class="form-control" id="price" [(ngModel)]="searchCriteria.price" name="price">
+    </div>
+    <div class="form-group">
+      <label for="dateOfPublish">Date of Publish:</label>
+      <select class="form-control" id="dateOfPublish" [(ngModel)]="searchCriteria.dateOfPublish" name="dateOfPublish">
+        <option *ngFor="let book of books" [value]="book.dateOfPublish">{{ book.dateOfPublish | date }}</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>

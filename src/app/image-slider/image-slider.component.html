@@ -1,8 +1,11 @@
 <div class="slides">
-    <div class="slide" [style.background-image]="'url(' + slides[currentSlide].url + ')'"
-    [style.background-size]="'cover'"
-    [style.background-position]="'center'"
-    [style.background-repeat]="'no-repeat'">
+        <div
+        class="slide"
+        [ngStyle]="{
+        'background-image': 'url(' + slides [currentSlide].url + ')',
+        opacity: hidden ? 0 : 1
+        }"
+>
     <div id="indicators">
         @for (slide of slides; track $index;) {
             <div class="indicator" 

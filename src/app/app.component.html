@@ -1,1 +1,10 @@
+<ng-container *ngIf="userRole === 'reader'; else adminHeader">
+    <app-header-reader></app-header-reader>
+  </ng-container>
+  
+  <ng-template #adminHeader>
+    <app-header-admin></app-header-admin>
+  </ng-template>
+  
+
 <router-outlet></router-outlet>

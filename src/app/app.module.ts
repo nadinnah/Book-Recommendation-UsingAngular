@@ -30,6 +30,13 @@ import {provideNativeDateAdapter} from '@angular/material/core';
 import { DbRemoverComponent } from './db-remover/db-remover.component';
 import { BannersComponent } from './banners/banners.component';
 import {MatTableModule} from '@angular/material/table';
+import { GenrePanelComponent } from './genre-panel/genre-panel.component';
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { AdvancedSearchComponent } from './advanced-search/advanced-search.component';
+import { SimilarBooksComponent } from './similar-books/similar-books.component';
 
 
 @NgModule({
@@ -49,8 +56,16 @@ import {MatTableModule} from '@angular/material/table';
     HomePageReaderComponent,
     DbAdderComponent,
     DbRemoverComponent,
-    BannersComponent
+    BannersComponent,
+    GenrePanelComponent,
+    NextDirective,
+    PrevDirective,
+    ProfilePageComponent,
+    StarRatingComponent,
+    AdvancedSearchComponent,
+    SimilarBooksComponent
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,

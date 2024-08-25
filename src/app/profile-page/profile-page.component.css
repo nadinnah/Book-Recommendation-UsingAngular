@@ -1,0 +1,58 @@
+.book-feed {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .book-item {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-image {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .book-details {
+    flex-grow: 1;
+  }
+  
+  .star-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .star-rating app-star-rating {
+    font-size: 20px; /* Adjust the font size of stars */
+    color: #fdd835; /* Star color */
+  }
+  .profile-header {
+    background-color: #f0f0f0; /* Light background color for the header */
+    padding: 20px; /* Padding around the header content */
+    border-radius: 8px; /* Rounded corners for the header */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+  }
+  
+  .welcome-message {
+    font-size: 24px; /* Larger font size for the welcome message */
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Bottom margin for spacing */
+  }
+  
+  .feed-heading {
+    font-size: 18px; /* Medium font size for the feed heading */
+    color: #555; /* Slightly darker text color */
+    margin-bottom: 15px; /* Bottom margin for spacing */
+    text-transform: uppercase; /* Uppercase text */
+    border-bottom: 2px solid #ccc; /* Underline effect with light gray border */
+    padding-bottom: 5px; /* Padding below the heading */
+  }
+  

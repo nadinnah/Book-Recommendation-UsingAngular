@@ -10,16 +10,23 @@ export class ImageSliderComponent {
   currentSlide=0;
   faArrowRight= faArrowRight;
   faArrowLeft= faArrowLeft;
-
+  hidden= false;
   next(){
-    this.currentSlide= (this.currentSlide + 1) % this.slides.length;
+    let currentSlide = (this.currentSlide + 1) % this.slides.length;
+    this.jumpToSlide (currentSlide);
   }
 
   prev(){
-    this.currentSlide= (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    let currentSlide = 
+    (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+    this.jumpToSlide (currentSlide);
   }
 
-  jumpToSlide (index: number) {
-    this.currentSlide = index;
-    }
+    jumpToSlide (index: number) {
+    this.hidden = true;
+    setTimeout(() => {
+      this.currentSlide = index;
+      this.hidden = false;
+    }, 300);
+}
 }

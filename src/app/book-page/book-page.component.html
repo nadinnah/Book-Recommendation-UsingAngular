@@ -1,18 +1,16 @@
-<app-header-reader></app-header-reader>
+<div class="back-button">
+    <button (click)="navigateBackToBooksPage()">Back to Books Page</button>
+</div>
+ 
 <div *ngIf="book" class="container">
     <img [src]="book.imageUrl" [alt]="book.name" />
 
     <div class="details">
         <div class="header">
-            <span class="name">
-                {{book.name}}
-        </span>
-           
+            <span class="name">{{book.name}}</span>
         </div>
         <br>
-        <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}">
-        </span>
-        
+        <span class="favorite" (click)="toggleFavorite(book)" [ngClass]="{'not': !book.favorite}"></span>
         <br>
         <div class="tags">
             <app-tags [bookPageTags]="book.tags" justifyContent="start"></app-tags>
@@ -21,9 +19,27 @@
         <div class="price">
             <span>{{book.price|currency}}</span>
         </div>
+        
+        <div class="author">
+            <span>Author: {{book.Author}}</span>
+        </div>
+        <br>
+        <div class="publisher">
+            <span>Publisher: {{book.publisher}}</span>
+        </div>
+        <br>
+        <div class="date">
+            <span>Date of Publish: {{book.dateOfPublish | date: 'longDate'}}</span>
+        </div>
+        <br>
         <div class="description">
             <p>{{book.description}}</p>
         </div>
     </div>
-
 </div>
+
+<app-similar-books [similarBooks]="similarBooks"></app-similar-books>
+
+
+<br><br><br><br><br><br>
+<app-footer></app-footer>

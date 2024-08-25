@@ -1,0 +1,21 @@
+<div *ngIf="reader">
+    <div class="profile-header">
+        <h2 class="welcome-message">Welcome, {{ reader.name }}</h2>
+        <h3 class="feed-heading">Your Book Feed:</h3>
+    </div>      
+    <div class="book-feed">
+      <div *ngFor="let item of reader.books" class="book-item">
+        <img [src]="item.book.imageUrl" alt="{{ item.book.name }}" class="book-image">
+        <div class="book-details">
+          <h4>{{ item.book.name }}</h4>
+          <!-- Star Rating Component -->
+          <div class="star-rating">
+            <app-star-rating [rating]="item.rating"></app-star-rating>
+          </div>
+          <p>Status: {{ item.status }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <app-footer></app-footer>

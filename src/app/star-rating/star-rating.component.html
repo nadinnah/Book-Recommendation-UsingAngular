@@ -1,0 +1,5 @@
+<span class="star" *ngFor="let isFilled of filledStars; let i = index">
+    <ng-container *ngIf="isFilled; else emptyStar">&#9733;</ng-container> <!-- Filled star -->
+    <ng-template #emptyStar>&#9734;</ng-template> <!-- Empty star -->
+  </span>
+  

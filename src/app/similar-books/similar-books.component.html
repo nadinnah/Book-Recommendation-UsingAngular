@@ -1,0 +1,19 @@
+<h2 style="margin-left: 60px;">similar books:</h2>
+<section class="similar-books-slider">
+    <div class="container">
+      <div class="slider-wrap">
+        <div class="slider-main">
+          <!-- Loop through similar books and display them as slider items -->
+          <div *ngFor="let book of similarBooks" class="slider-item">
+            <img [src]="book.imageUrl" alt="{{ book.name }}" class="book-image">
+            <div class="book-name">{{ book.name }}</div>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="button" class="prev">&#8249;</button>
+          <button type="button" class="next">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  

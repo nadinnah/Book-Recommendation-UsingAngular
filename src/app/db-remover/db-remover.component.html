@@ -20,9 +20,9 @@
 </header>
 
 <div class="bookDisplayer">
+    
         <ul>
             <li *ngFor="let book of books">
-                
             <div class="bookHandler">
                     <div class="nameDisplayer">
                         <label>Book Name: </label>
@@ -52,9 +52,12 @@
                                 <label>Book Price: </label> {{book.price | currency}}
                             </span>
                         </div>
-
-                        <button  mat-raised-button color="primary" type="submit" (click)="onDeleteBook(book.bookId)">Delete book</button>
-                    <div class="book-removed-message" *ngIf="bookRemovedMessage">{{ bookRemovedMessage }}</div>
+                        <div class="deleter">
+                            <button  mat-raised-button color="primary" type="submit" (click)="onDeleteBook(book.bookId,book)">Delete book</button>
+                            <div class="book-removed-message" *ngIf="bookRemovedMessage">{{ bookRemovedMessage }}</div>
+                        </div>
+                        <br>
+                        <br><br><br>
 
             </div>
             </li>
